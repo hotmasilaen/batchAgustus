@@ -71,11 +71,6 @@
 
  }
 
- /* .container-img>p:hover {
-     left: 150px;
-     top: 200px;
- } */
-
  @keyframes imgMove {
      from {
          width: 0px;

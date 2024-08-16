@@ -39,6 +39,11 @@ button {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.tokoMainan {
+    height: 460px;
+    min-height: 460px;
+}
+
 .content-form {
     padding: 20px;
 }
@@ -52,4 +57,8 @@ h3 {
 
 p {
     margin-bottom: 5px;
+}
+
+.header {
+    padding-left: 20px;
 }

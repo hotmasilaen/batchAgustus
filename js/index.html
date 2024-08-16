@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div>
+        <p>Tanggal hari ini:</p>
+        <p id="date"></p>
+    </div>
+    <div class="container">
+        <div class="tokoPakaian">
+            <h3>Toko Pakaian</h3>
+            <div class="content-form">
+                <p>Harga Tas</p>
+                <input type="number" placeholder="Harga Tas" id="hargaTas" />
+
+                <p>Harga Baju</p>
+                <input type="text" placeholder="Harga Baju" id="hargaBaju" /><br /><br />
+
+                <p>Diskon (%) </p>
+                <input type="text" placeholder="diskon (%)" id="persen" /><br /><br />
+
+                <button onclick="return hitungTotalPakaian()">Total Harga</button>
+                <p class="error" id="errorTas"></p>
+                <p>Total Harga:</p>
+                <p id="totalHarga"></p>
+            </div>
+        </div>
+        <div class="tokoMainan">
+            <h3>Toko Mainan</h3>
+            <div class="content-form">
+                <p>Harga Mobil Mainan</p>
+                <input type="number" placeholder="Harga Mobil Mainan" id="mobilMainan" />
+
+                <p>Harga Lego</p>
+                <input type="text" placeholder="Harga Lego" id="lego" />
+
+                <p>KODE KUPON</p>
+                <input type="text" placeholder="Masukkan kode kupon" id="kupon" /><br /><br />
+
+                <button onclick="return hitungTotalMainan()">Total Harga</button>
+                <p>Total Harga:</p>
+                <p id="totalHargaMainan"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>

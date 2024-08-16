@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            background-color: yellow;
+            width: fit-content;
+        }
+
+        table,
+        td,
+        th {
+            border-bottom: 1px solid black;
+        }
+    </style>
+    <script>
+        function checkPassword() {
+            let pswd = document.forms["myForm"]["pswd"].value
+            if (pswd === '12345') {
+                alert("Password benar.");
+            } else {
+                alert("Password salah.");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nama</th>
+                <th>Alamat</th>
+                <th>no Hp</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Nia</td>
+                <td>Jakarta</td>
+                <td>087985656</td>
+            </tr>
+            <tr>
+                <td>Putri</td>
+                <td>Lampung</td>
+                <td>087985656</td>
+            </tr>
+            <tr>
+                <td>Nia</td>
+                <td>Jakarta</td>
+                <td>087985656</td>
+            </tr>
+        </tbody>
+    </table>
+    <h1>Tingkatkan Karier Profesionalmu</h1>
+    <!-- Ini adalah aplikasi pertama saya -->
+    <a href="https://arkademi.com/promo-event">Promo & Event</a><br />
+    <mark>
+        Arkademi adalah <b>Lembaga Kursus dan Pelatihan resmi berlisensi</b> dari Kementerian Pendidikan, Kebudayaan,
+        Riset, dan
+        Teknologi RI
+    </mark>
+    <p>
+        Arkademi adalah <b>Lembaga Kursus dan Pelatihan resmi berlisensi</b> dari Kementerian Pendidikan, Kebudayaan,
+        Riset, dan
+        Teknologi RI
+    </p>
+    <img src="./desktop-wallpaper-background-png-collection-for-picsarttt.jpg" alt="gambar pemandangan" />
+    <form name="myForm" onsubmit="return checkPassword()">
+        Password: <input type="text" name=" pswd " />
+        <input type="submit" value="Check Password" />
+    </form>
+</body>
+
+</html>
